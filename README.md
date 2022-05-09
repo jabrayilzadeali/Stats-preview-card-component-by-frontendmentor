@@ -287,6 +287,5 @@ h2 {
 
 ## Author
 
-- Github - [jabrayilzadeali](https://github.com/jabrayilzadeali)
 - Frontend Mentor - [Jabrayilzade Ali](https://www.frontendmentor.io/profile/jabrayilzadeali)
 - Twitter - [Jabrayilzade Ali](https://twitter.com/JabrayilzadeAli)
