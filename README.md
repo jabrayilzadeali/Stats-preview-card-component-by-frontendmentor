@@ -1,91 +1,292 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Stats preview card component solution
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
+Front end challenge by frontendmentor
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./design/mobile_screenshot.png)
+![](./design/design_screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+### Links
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+## My process
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### Built with
 
-## Building your project
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I learned
 
-## Deploying your project
+To see how you can add code snippets, see below:
+- how to add img color overlay
+- css grid
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="style/style.css">
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 
-## Create a custom `README.md`
+  <title>Frontend Mentor | Stats preview card component</title>
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
 
-## Submitting your solution
+	<main>
+		<div class="img-background item">
+			<img class="img" src="/images/image-header-mobile.jpg" alt="image">
+		</div>
+		<div class="content item">
+			<h1>Get <span class="insights">insights</span> that help your business grow.</h1>
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+			<p>
+				Discover the benefits of data analytics and 
+				make better decisions regarding revenue, 
+				customer experience, 
+				and overall efficiency.
+			</p>
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+			<div class="score">
+				<!-- <h2>10k+ <span class="stat-name">companies</span></h2>
+				<h2>314 <span class="stat-name">templates</span></h2>
+				<h2>12m+ <span class="stat-name">queries</span></h2> -->
+				<div class="stat-name">
+					<h2>10k+</h2>
+					<span class="stat-name">companies</span>
+				</div>
+				<div class="stat-name">
+					<h2>314</h2>
+					<span class="stat-name">templates</span>
+				</div>
+				<div class="stat-name">
+					<h2>12m+</h2>
+					<span class="stat-name">queries</span>
+				</div>
+			</div>
+		</div>
+	</main>
 
-## Sharing your solution
+</body>
+</html>
+```
+```css
+:root {
+	--Very-dark-blue-main-background: hsl(233, 47%, 7%);
+	--Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+	--Soft-violet-accent: hsl(277, 64%, 61%);
+	--White-main-heading-stats: hsl(0, 0%, 100%);
+	--Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+	--Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
 
-There are multiple places you can share your solution:
+* {
+	box-sizing: border-box; 
+}
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+body {
+	font-family: 'Inter', sans-serif;
+	font-family: 'Lexend Deca', sans-serif;
+	font-family: 'Overpass', sans-serif;
+	font-family: 'Red Hat Display', sans-serif;
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+	font-size: 15px;
+	background-color: var(--Very-dark-blue-main-background);
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+	width: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
 
-## Got feedback for us?
+p {
+	color: var(--Slightly-transparent-white-main-paragraph)
+}
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+main {
+	background-color: var(--Dark-desaturated-blue-card-background);
+	color: var(--White-main-heading-stats);
+	width: 375px;
+	border-radius: 1rem;
+	text-align: center;
+}
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+img {
+	width: 100%;
+}
 
-**Have fun building!** 🚀
+.img-background {
+	background-color: hsl(276, 89%, 31%);
+	height: 275px;
+}
+
+img,
+.img-background {
+	border-radius: 1rem 1rem 0 0;
+}
+
+.img {
+	opacity: 0.4;
+}
+
+.content {
+	padding: 3.5rem;
+}
+
+.insights {
+	color: var(--Soft-violet-accent);
+}
+
+.stat-name {
+	margin-top: -15px;
+	letter-spacing: .1rem;
+	color: var(--Slightly-transparent-white-stat-headings);
+	display: block;
+}
+
+span {
+	font-weight: normal;
+}
+
+h2 {
+	margin-top: 40px;
+	color: white;
+}
+
+@media (min-width: 1440px) {
+	main {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* flex-direction: row-reverse; */
+		width: 960px;
+		text-align: left;
+	}
+
+	.img-background {
+		width: 100%;
+		height: 100%;
+		order: 1;
+		/* object-fit: contain; */
+	}
+
+	img {
+		height: 100%;
+	}
+
+	img,
+	.img-background {
+		border-radius: 0 1rem 1rem 0;
+	}
+
+
+	/* .item {
+		flex-basis: 0;
+		flex-grow: 1;
+	} */
+
+	.content {
+		box-sizing: border-box;
+		padding-right: 4rem;
+	}
+
+	.content p {
+		width: 290px;
+		font-size: .82rem;
+		line-height: 1.4rem;
+	}
+
+	.score {
+		display: flex;
+		width: 300px;
+		justify-content: space-between;
+	}
+
+
+	/* .item {
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.img-background {
+		max-height: 468px;
+	} */
+
+	/* .item {
+		flex-grow: 1;
+		width: 720px;
+	}
+
+	.content {
+		padding: 3.5rem;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.img-background {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.score {
+		display: flex;
+		justify-content: space-around;
+	} */
+
+}
+```
+
+## Author
+
+- Github - [jabrayilzadeali](https://github.com/jabrayilzadeali)
+- Frontend Mentor - [Jabrayilzade Ali](https://www.frontendmentor.io/profile/jabrayilzadeali)
+- Twitter - [Jabrayilzade Ali](https://twitter.com/JabrayilzadeAli)
